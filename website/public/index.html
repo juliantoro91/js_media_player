@@ -24,14 +24,74 @@
     </header>
 
     <main>
-        <section>
-            <div class="video_container">
-                <div class="video_controls"></div>
-                <video controls preload="auto">
-                    <source src="../src/video/BigBuckBunny.mp4">
-                    <source src="">
-                    <source src="">
-                </video>
+        <section class="video_container">
+            <div class="video_controls">
+                <div>
+                    <picture class="control_icon mute_button">
+                        <img src="../src/images/mute_icon.svg" alt="" id="mute_button">
+                    </picture>
+                </div>
+                <div>
+                    <picture class="control_icon backward_button">
+                        <img src="../src/images/backward_icon.svg" alt="" id="backward_button">
+                    </picture>
+                    <picture class="control_icon play_button">
+                        <img src="../src/images/play_icon.svg" alt="" id="play_button">
+                    </picture>
+                    <picture class="control_icon forward_button">
+                        <img src="../src/images/forward_icon.svg" alt="" id="forward_button">
+                    </picture>
+                </div>
+                <div></div>
+            </div>
+            <video preload="auto">
+                <source src="../src/video/BigBuckBunny.mp4">
+                <source src="">
+                <source src="">
+            </video>
+        </section>
+
+        <section class="comments_section">
+            <div>
+                <h2>Comments</h2>
+            </div>
+            <div class="new_comment_field">
+                <h4>New Comment</h4>
+                <form action="">
+                    <label for="new_comment">
+                        <input type="text" id="new_comment">
+                    </label>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="comments_list">
+                <ul>
+                    <li>
+                        <h4>User 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam aliquid nesciunt atque porro, officiis quasi dicta exercitationem laborum accusantium nihil minus modi voluptatibus ab officia quidem magni blanditiis sequi.</p>
+                        <p>11/17/2021</p>
+                    </li>
+                    <li>
+                        <h4>User 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam aliquid nesciunt atque porro, officiis quasi dicta exercitationem laborum accusantium nihil minus modi voluptatibus ab officia quidem magni blanditiis sequi.</p>
+                        <p>11/17/2021</p>
+                    </li>
+                    <li>
+                        <h4>User 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam aliquid nesciunt atque porro, officiis quasi dicta exercitationem laborum accusantium nihil minus modi voluptatibus ab officia quidem magni blanditiis sequi.</p>
+                        <p>11/17/2021</p>
+                    </li>
+                    <li>
+                        <h4>User 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam aliquid nesciunt atque porro, officiis quasi dicta exercitationem laborum accusantium nihil minus modi voluptatibus ab officia quidem magni blanditiis sequi.</p>
+                        <p>11/17/2021</p>
+                    </li>
+                    <li>
+                        <h4>User 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam aliquid nesciunt atque porro, officiis quasi dicta exercitationem laborum accusantium nihil minus modi voluptatibus ab officia quidem magni blanditiis sequi.</p>
+                        <p>11/17/2021</p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

@@ -1,10 +1,13 @@
 :root {
-    --very-light-gray: #c7c7c7;
-    --white: #FFFFFF;
+    --light-gray: #C7C7C7;
+    --very-light-gray:#EEEEEE;
     --text-input-field: #F7F7F7;
+    --light-blue: #32a7af;
+    --vivid-green: #d0e74b;
+    --dark-blue: #0c3948;
+    --white: #FFFFFF;
     --black: #000000;
-    --hospital-green: #ACD9B2;
-    --dark: #232830;
+    --dark: #2b2b2b;
     --principal-font: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
     --secondary-font: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --sm: 1.4rem;
@@ -24,4 +27,6 @@ html {
 
 body {
     font-family: var(--principal-font);
+    font-size: var(--sm);
+    font-weight: 300;
 }

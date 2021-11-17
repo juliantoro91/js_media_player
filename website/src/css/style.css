@@ -1,3 +1,4 @@
+/* Navigation bar Styles */
 nav {
     width: 100vw;
     height: 80px;
@@ -6,18 +7,24 @@ nav {
     padding: 15px;
     align-items: center;
     background-color: var(--very-light-gray);
-    filter: drop-shadow(0 0 4px black);
+    filter: drop-shadow(0 0 4px var(--black));
+    z-index: 4;
 }
 
 .site_logo {
     height: 40px;
 }
 
+.site_menu {
+    cursor: pointer;
+}
+/* URL to calculate filter: https://codepen.io/sosuke/pen/Pjoqqp */
 .site_menu img {
     height: 30px;
-    fill: red;
+    filter: invert(11%) sepia(23%) saturate(606%) hue-rotate(177deg) brightness(89%) contrast(87%);
 }
 
+/* Video Player Styles */
 .video_container {
     width: 100vw;
     height: calc(100vw * 180 / 320);
@@ -25,12 +32,46 @@ nav {
 }
 
 .video_controls {
-    width:inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 2;
-    background-color: var(--dark);
-    opacity: 0.2;
+    /*background-color: var(--dark);*/
+    opacity: 0.8;
+}
+
+.video_controls div:nth-child(1) {
+    height: 20%;
+    padding: 3%;
+    display: flex;
+    justify-content: end;
+}
+
+.video_controls div:nth-child(2) {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_controls div:nth-child(2) > picture {
+    margin: 0 5%;
+}
+
+.video_controls div:nth-child(2) picture:nth-child(2) img {
+    height: 50px;
+}
+
+.video_controls div:nth-child(3) {
+    height: 20%;
+}
+
+.control_icon img {
+    height: 30px;
+    filter: invert(99%) sepia(37%) saturate(7308%) hue-rotate(188deg) brightness(133%) contrast(94%);
 }
 
 section video {
@@ -39,3 +80,30 @@ section video {
     position: absolute;
     z-index: 1;
 }
+
+/* Comments Section Styles */
+h2 {
+    font: var(--secondary-font);
+    font-size: var(--lg);
+    font-weight: 500;
+    color: var(--light-blue);
+}
+
+h4 {
+    font: var(--principal-font);
+    font-size: var(--sm);
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.comments_section {
+    width: 90vw;
+    height: auto;
+    margin: 30px auto;
+}
+
+.comments_section > div {
+    margin-top: 10px;
+}
+
+/*.new_comment_field input*/
