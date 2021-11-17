@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>JS Media Player / @juliantoro91</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation_var">
+            <img src="../src/images/logo-JulianToro.png" alt="Site Logo - Julian Toro" class="site_logo">
+            <div class="menu">
+                <picture class="site_menu">
+                    <source media="(min-width: 800px)" srcset="../src/images/menu-desktop.svg">
+                    <img src="../src/images/menu-mobile.svg" alt="Menu Icon">
+                </picture>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="video_container">
+                <div class="video_controls"></div>
+                <video controls preload="auto">
+                    <source src="../src/video/BigBuckBunny.mp4">
+                    <source src="">
+                    <source src="">
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--very-light-gray);
+    filter: drop-shadow(0 0 4px black);
+}
+
+.site_logo {
+    height: 40px;
+}
+
+.site_menu img {
+    height: 30px;
+    fill: red;
+}
+
+.video_container {
+    width: 100vw;
+    height: calc(100vw * 180 / 320);
+    position: relative;
+}
+
+.video_controls {
+    width:inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--dark);
+    opacity: 0.2;
+}
+
+section video {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+}
